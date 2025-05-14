@@ -9,16 +9,26 @@
 <body>
   <section class="login-container">
     <form class="login-form">
-      <h2>Cadastre Filme/Série</h2>
+      <h2>Cadastrar Filme/Série</h2>
 
-      <input type="text" placeholder="Nome do filme" required />
-      <input type="email" placeholder="Gênero" required />
-      <input type="password" placeholder="Sinopse" required />
-      <input type="password" placeholder="Nota" required />
+      <input id="nome" placeholder="Nome do Filme/Série" required />
+      <input id="genero" placeholder="Gênero" required />
+      <input id="sinopse" placeholder="Sinopse"  />
+      <input id="nota" placeholder="Nota" required />
 
       <button type="submit" class="btn">Cadastrar Filme/Série</button>
       <p>Já tem conta? <a href="login.html">Entrar</a></p>
     </form>
   </section>
+
+  <script src="client/js/app/model/Cadastro.js"></script>
+  <script src="client/js/app/controllers/CadastroController.js"></script>
+  <script src="client/js/app/model/ListaCadastro.js"></script>
+  <script src="client/js/app/model/ListaCadastro.js"></script>
+  <script src="client/js/app/app.js"></script>
+  <script>
+    let cadastroController = new CadastroController;
+  </script>
+
 </body>
 </html>
